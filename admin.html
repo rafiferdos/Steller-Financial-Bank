@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bank Amount</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" type="image/x-icon" href="./favicon.ico" />
+    <link rel="stylesheet" href="style2.css" />
+  </head>
+  <body>
+    <h2
+      class="text-8xl mt-8 text-center mb-12 font-bold text-transparent bg-clip-text bg-gradient-to-bl from-blue-700 to-cyan-300"
+    >
+      Do Anything
+    </h2>
+    <section>
+      <div class="grid grid-cols-3 gap-4 w-9/12 mx-auto">
+        <div
+          class="deposit bg-gradient-to-bl from-orange-500 to-yellow-500 px-24 text-white rounded-2xl py-8"
+        >
+          <h3 class="text-7xl">Deposit</h3>
+          <h4 class="text-4xl">$<span id="updateableDeposit">00</span></h4>
+        </div>
+        <div
+          class="withdraw bg-gradient-to-bl from-gray-800 to-gray-200 px-24 text-white rounded-2xl py-8"
+        >
+          <h3 class="text-7xl">Withdraw</h3>
+          <h4 class="text-4xl">$<span id="updateableWithdraw">00</span></h4>
+        </div>
+        <div
+          class="total bg-gradient-to-bl from-purple-800 to-purple-300 px-24 text-white rounded-2xl py-8"
+        >
+          <h3 class="text-7xl">Total</h3>
+          <h4 class="text-4xl">$<span id="updateableTotal">00</span></h4>
+        </div>
+      </div>
+    </section>
+    <section class="spacer my-16"></section>
+    <section>
+      <div class="grid grid-cols-2 gap-4 w-8/12 mx-auto">
+        <div
+          class="deposit-center bg-lime-700 px-24 text-white rounded-2xl py-8"
+        >
+          <h3 class="text-4xl">Amount to deposit</h3>
+          <form action="">
+            <input
+              class="mt-8 px-8 py-4 rounded-xl text-black"
+              type="text"
+              name="depositAmount"
+              id="depositAmount"
+              placeholder="Amount in $"
+            />
+            <input
+              class="rounded-2xl py-5 px-8 mx-2 cursor-pointer bg-lime-900 font-bold"
+              type="button"
+              value="Deposit"
+              id="depositButton"
+            />
+          </form>
+        </div>
+        <div
+          class="withdraw-center deposit-center bg-rose-400 px-24 text-white rounded-2xl py-8"
+        >
+          <h3 class="text-4xl">Amount to withdraw</h3>
+          <form action="">
+            <input
+              class="mt-8 px-8 py-4 rounded-xl text-black"
+              type="text"
+              name="withdrawAmount"
+              id="withdrawAmount"
+              placeholder="Amount in $"
+            />
+            <input
+              class="rounded-2xl py-5 px-8 mx-2 cursor-pointer bg-rose-700 font-bold"
+              type="button"
+              value="Withdraw"
+              id="withdrawButton"
+            />
+          </form>
+        </div>
+      </div>
+    </section>
+    <script src = "adminScript.js"></script>
+  </body>
+</html>

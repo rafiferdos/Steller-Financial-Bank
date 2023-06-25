@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Steller Financial Bank</title>
+    <link rel="icon" type="image/x-icon" href="./favicon.ico" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="flex h-screen items-center justify-center">
+      <div
+        class="login-area h-4/5 w-4/5 flex items-center justify-around bg-gray-900 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100"
+      >
+          <div class="left h-100 items-center justify-center">
+            <img class="object-cover" src="./bank.png" alt="bank image" />
+          </div>
+          <div class="right">
+            <h2 class="text-7xl text-center mb-12 font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-400">Login First</h2>
+            <input
+              class="block py-8 px-40 rounded-md mt-5 bg-transparent placeholder-white border-2 text-white"
+              type="email"
+              name="email"
+              id="emailInput"
+              placeholder="Enter email here"
+            />
+            <input
+              class="block py-8 px-40 rounded-md mt-5 bg-transparent placeholder-white border-2 text-white"
+              type="password"
+              name="password"
+              id="passwordInput"
+              placeholder="Password"
+            />
+            <button class="font-bold text-gray py-8 px-40 mt-5 w-full rounded-md bg-gradient-to-bl from-cyan-500 to-cyan-200 hover:from-cyan-400 hover:to-cyan-200 transition-all" id="submitButton" type="submit">Login</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
